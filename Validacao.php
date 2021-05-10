@@ -2,7 +2,7 @@
 
 class TesetSuperLogica
 {
-   
+
     public function cadastrar()
     {
 
@@ -11,17 +11,21 @@ class TesetSuperLogica
                 'Erro' => 'falha ao cadastrar',
                 'message' => "CEP invalido"
             ));
-        } elseif ($this->validaFone()) {
+        }
+
+        if ($this->validaFone()) {
             return  json_encode(array(
                 'Erro' => 'falha ao cadastrar',
                 'message' => 'O numero de telefone e  invalido'
             ));
-        } elseif (!$this->validaEmail()) {
+        }
+        if (!$this->validaEmail()) {
             return  json_encode(array(
                 "Erro" => 'falha ao cadastrar',
                 'message' => 'Email  invalido'
             ));
-        } elseif (!$this->validaSenha()) {
+        }
+        if (!$this->validaSenha()) {
             return  json_encode(array(
                 "Erro" => 'falha ao cadastrar',
                 'message' => 'Senha (8 caracteres mínimo, contendo pelo menos 1 letra e 1 número):'
