@@ -49,7 +49,7 @@ class TesetSuperLogica
     {
         $regex = '/^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/';
 
-        if (preg_match($informacao->phoneNumber) == false) {
+        if (preg_match($regex,$informacao->phoneNumber) == false) {
 
             return true;
         } else {
@@ -72,7 +72,7 @@ class TesetSuperLogica
     public function  validaSenha()
     {
         $regex = '/^(?=.*\d)(?=.*[a-z\A-Z])[0-9a-zA-Z$*&@#]{8,}$/';
-        if (preg_match($informacao->password) == false) {
+        if (preg_match($regex,$informacao->password) == false) {
 
             return false;
         } else {
