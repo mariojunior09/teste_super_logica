@@ -37,42 +37,28 @@ class TesetSuperLogica
 
     public function validaCep()
     {
-        $cep = trim($informacao->zipCode);
+        $cep = trim($_POST["zipCode"]);
         $avaliaCep = mb_ereg("^[0-9]{5}-[0-9]{3}$", $cep);
-        if ($avaliaCep) {
-            return true;
-        } else {
-            return false;
-        }
+        return $avaliaCep ? true : false;
+       
     }
     public function validaFone()
     {
         $regex = '/^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/';
-
-        if (preg_match($regex, $informacao->phoneNumber) == false) {
-
-            return true;
-        } else {
-
-            return false;
-        }
+        return  preg_match($regex, $_POST["phoneNumber"]) == false ? true : false;
+     
     }
 
     public function validaEmail()
     {
-        $email = filter_var($informacao->email, FILTER_SANITIZE_EMAIL);
+        $email = filter_var($_POST["email"],FILTER_SANITIZE_EMAIL);
         return filter_var($email, FILTER_VALIDATE_EMAIL) ? true : false;
     }
     public function  validaSenha()
     {
         $regex = '/^(?=.*\d)(?=.*[a-z\A-Z])[0-9a-zA-Z$*&@#]{8,}$/';
-        if (preg_match($regex, $informacao->password) == false) {
-
-            return false;
-        } else {
-
-            return true;
-        }
+       return preg_match($regex, $_POST["password"]) ? true :false ;
+       
     }
 }
 
