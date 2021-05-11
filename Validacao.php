@@ -1,6 +1,6 @@
 <?php
 
-class TesetSuperLogica
+class TesteSuperLogica
 {
 
     public function cadastrar()
@@ -105,5 +105,5 @@ class TesetSuperLogica
     }
 }
 
-$send = new TesetSuperLogica();
+$send = new TesteSuperLogica();
 print_r($send->cadastrar());
