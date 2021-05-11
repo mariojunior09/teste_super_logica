@@ -76,5 +76,5 @@ class TesetSuperLogica
     }
 }
 
-$informacao = new TesetSuperLogica();
-print_r($informacao->cadastrar());
+$send = new TesetSuperLogica();
+print_r($send ->cadastrar());
