@@ -6,7 +6,6 @@ class TesetSuperLogica
     public function cadastrar()
     {
         $informacao = $this->select($informacao);
-
         if ($this->validaCamposNull($informacao)) {
             return $this->validaCamposNull();
         }
