@@ -37,11 +37,11 @@ echo '<br>';
 
 // //6) Crie uma condição para verificar se existe o valor 14 no array
 if (in_array(14, $novoArray)) {
-    echo 'O avlor existe';
+    echo 'O valor existe';
     echo '<br>';
     echo '<br>';
 } else {
-    echo 'O avlor não existe';
+    echo 'O valor não existe';
     echo '<br>';
     echo '<br>';
 }
