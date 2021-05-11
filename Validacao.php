@@ -7,7 +7,7 @@ class TesteSuperLogica
     {
         $informacao = $this->select($informacao);
         if ($this->validaCamposNull($informacao)) {
-            return $this->validaCamposNull();
+            return $this->validaCamposNull($informacao);
         }
 
         if (!$this->validaCep($informacao)) {
@@ -41,7 +41,6 @@ class TesteSuperLogica
 
     public function validaCamposNull($dados)
     {
-
 
         if (empty($dados->userName)) {
 
