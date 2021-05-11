@@ -17,14 +17,14 @@
             <div class="row justfy-content-center">
                 <div col-6>
                     <label for="userName">Nome do usuário:</label>
-                    <input type="text" class="form-control" id="userName" name="userName"   >
+                    <input type="text" class="form-control" id="userName" name="userName">
                 </div>
             </div>
 
             <div class="row justfy-content-center">
                 <div col-6>
                     <label for="zipCode">CEP</label>
-                    <input type="text" class="form-control" id="zipCode" name="zipCode"  >
+                    <input type="text" class="form-control" id="zipCode" name="zipCode">
                 </div>
             </div>
 
@@ -32,7 +32,7 @@
                 <div col-6>
                     <div>
                         <label for="phoneNumber">Número do telefone:</label>
-                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber"  >
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                 <div col-6>
                     <div>
                         <label for="email">Email:</label>
-                        <input type="text" class="form-control" id="email" name="email" >
+                        <input type="text" class="form-control" id="email" name="email">
                     </div>
                 </div>
             </div>
@@ -50,10 +50,10 @@
                     <div>
                         <label for="password">Senha (8 caracteres mínimo, contendo pelo menos 1 letra e 1
                             número):</label>
-                        <input type="password" class="form-control" id="password" name="password" >
+                        <input type="password" class="form-control" id="password" name="password">
                     </div><br>
 
-                    <input type="submit" class="btn btn-primary" value="Cadastrar" >
+                    <input type="submit" class="btn btn-primary" value="Cadastrar">
                 </div>
             </div>
         </form>
